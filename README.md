@@ -81,28 +81,43 @@ https://www.figma.com/design/OuM2wrL7mzNy9WKLzUKIlR/Untitled?node-id=19-94&m=dev
   "name": "Ana Clara",
   "profile": {
     "city": "Recife",
-    "user_type": "comum",
+    "userType": "comum", 
     "interests": ["ciência de dados", "front-end", "mentorias"]
   },
   "login": {
     "email": "ana@example.com",
-    "password": "123456",
+    "password": "********",
     "rememberMe": true
   },
   "opportunities": [
     {
-      "title": "Programa de Mentoria",
       "icon": "https://cdn-icons-png.flaticon.com/512/1055/1055687.png",
+      "title": "Programa de Mentoria",
       "description": "Sessões semanais com mulheres seniores da área tech."
+    },
+    {
+      "icon": "https://cdn-icons-png.flaticon.com/512/3135/3135789.png",
+      "title": "Curso Gratuito de Front-End",
+      "description": "Aprenda HTML, CSS e JavaScript do zero."
+    },
+    {
+      "icon": "https://cdn-icons-png.flaticon.com/512/2991/2991148.png",
+      "title": "Evento Tech - Recife",
+      "description": "Encontros e palestras com foco em diversidade na tecnologia."
     }
   ],
   "highlights": [
     {
       "icon": "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
-      "description": "Mais de 2.000 mulheres impactadas em 2024!"
+      "description": "Mais de 2.000 mulheres impactadas em 2024! Junte-se à nossa missão."
+    },
+    {
+      "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828640.png",
+      "description": "Novo curso de back-end disponível! Confira agora mesmo!"
     }
   ]
 }
+
 
 
 ## H2 Console

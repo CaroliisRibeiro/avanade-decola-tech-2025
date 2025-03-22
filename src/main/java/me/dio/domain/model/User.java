@@ -2,10 +2,11 @@ package me.dio.domain.model;
 
 import jakarta.persistence.*;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity(name = "tb_user")
 public class User {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -18,11 +19,17 @@ public class User {
     @OneToOne(cascade = CascadeType.ALL)
     private Login login;
     
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private List <Opportunity> opportunities;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private List <Highlight> highlights;
+
+      // Em User.java
+    @JsonManagedReference
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<Opportunity> opportunities;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<Highlight> highlights;
+
+  
 
     public long getId() {
         return id;
