@@ -1,0 +1,8 @@
+[phases.setup]
+nixpkgsArchive = "https://github.com/NixOS/nixpkgs/archive/refs/tags/23.11.tar.gz"
+
+[phases.build]
+cmds = ["./gradlew build"]
+
+[phases.start]
+cmds = ["java -jar build/libs/avanade-decola-tech-2025-0.0.1-SNAPSHOT.jar"]
