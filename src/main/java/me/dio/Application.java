@@ -1,4 +1,4 @@
-package me.dio.avanade_decola_tech_2025;
+package me.dio;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
