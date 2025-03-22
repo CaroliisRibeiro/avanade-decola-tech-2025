@@ -73,6 +73,9 @@ classDiagram
 
 ```
 
+## Link Figma
+https://www.figma.com/design/OuM2wrL7mzNy9WKLzUKIlR/Untitled?node-id=19-94&m=dev&t=iw6xS1XtPE7mhy68-1
+
 ## Exemplo de JSON (POST /users)
 {
   "name": "Ana Clara",
