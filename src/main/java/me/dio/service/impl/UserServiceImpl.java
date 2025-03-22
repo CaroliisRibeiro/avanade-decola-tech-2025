@@ -24,8 +24,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User create(User userToCreate) {
-        // Aqui você pode adicionar validações, se necessário
-        // Exemplo: verificar se já existe um login com o mesmo e-mail
+        
+        if (userRepository.existsByLoginEmail(userToCreate.getLogin().getEmail())) {
+            throw new IllegalArgumentException("This email is already registered.");
+        }
+        
 
         return userRepository.save(userToCreate);
     }
